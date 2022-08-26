@@ -176,7 +176,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
-    libavservices_minijail.vendor \
     libbatching \
     libgeofencing \
     libgnss
@@ -319,6 +318,7 @@ PRODUCT_ODM_PROPERTIES += \
 
 # QTI Component
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     perf \
     vibrator
