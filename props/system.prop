@@ -51,6 +51,9 @@ ro.media.recorder-max-base-layer-fps=60
 # Netflix
 ro.netflix.bsp_rev=Q6125-17995-1
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # QTI Mem Optimization
 persist.vendor.sys.memplus.enable=false
 ro.vendor.qti.sys.fw.bg_apps_limit=30
