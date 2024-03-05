@@ -61,6 +61,13 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NEEDS_RAW10_BUFFER_FIX := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Data Services
+SOONG_CONFIG_NAMESPACES += rmnetctl
+SOONG_CONFIG_rmnetctl += \
+    old_rmnet_data
+
+SOONG_CONFIG_rmnetctl_old_rmnet_data := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_DRM_PP := true
