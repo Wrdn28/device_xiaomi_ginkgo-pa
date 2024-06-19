@@ -1462,11 +1462,11 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc
 vendor/lib64/vendor.qti.latency@2.0.so|afcde314af1157cd049192df85dbf5edb603a4b1
 vendor/lib64/vendor.qti.latency@2.1.so|94f65ac08f0ef678dd82c60532c06a456d206707
 
-# ConfigStore - from LA.UM.9.11.r1-04500-NICOBAR.0
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|c96269d845db307474f5db98e6f7e46204752aa0
+# Configstore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|81be3e1c39280c1bed769ff4e3bee25b4ef1195e
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|875b97e2bbbdb6f7d907d58269d4cb4d9f204413
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|773c888f0755fade3a4c1ae27a44bd1fdc465afa
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|adae94cab65e5b91553ba8c76a4bdda7b4fdd1f6
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|12d4edcd852196a531f688ed74d86ea10c4acb43
 
 # Display calibration
 vendor/etc/qdcm_calib_data_ft8719_video_mode_dsi_huaxing_panel.xml
