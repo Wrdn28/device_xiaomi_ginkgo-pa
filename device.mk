@@ -304,6 +304,7 @@ PRODUCT_ODM_PROPERTIES += \
 
 # QTI Component
 TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
     av \
     bt \
     perf \
