@@ -2283,6 +2283,9 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
+# QTI Telephony Injection
+system_ext/framework/qti-telephony-common.jar|bb3ab85fcc841cb41e7f7c911eecf4de110d09b9
+
 # Telephony - from LA.QSSI.13.0.r1-06400-qssi.0
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
 etc/sysconfig/qti_whitelist.xml|237b63df7c6930dcfdf8912c2792a76a37868f34
