@@ -155,5 +155,8 @@ BOARD_SEPOLICY_M4DEFS += \
      sysfs_battery_supply=vendor_sysfs_battery_supply \
      sysfs_usb_supply=vendor_sysfs_usb_supply
 
+# MiuiCamera
+-include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk

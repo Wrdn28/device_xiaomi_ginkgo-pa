@@ -24,11 +24,8 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayGinkgo \
     TelephonyOverlayGinkgo \
     TetheringOverlayGinkgo \
-    WifiOverlayGinkgo
-
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
+    WifiOverlayGinkgo \
+    GinkgoMiuiCamera 
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -97,6 +94,8 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
