@@ -11,15 +11,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Vendor blobs
 $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
     GinkgoNoCutoutOverlay \
     NotchBarKiller \
     WillowFrameworkRes
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayGinkgo \
+    FrameworksOverlayGinkgo \
+    FrameworksOverlayWillow \
+    NoCutoutOverlayGinkgo \
+    NotchBarKillerOverlayGinkgo\
+    SettingsLibOverlayGinkgo \
+    SettingsOverlayGinkgo \
+    SettingsProviderOverlayGinkgo \
+    SystemUIOverlayGinkgo \
+    TelephonyOverlayGinkgo \
+    TetheringOverlayGinkgo \
+    WifiOverlayGinkgo
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -445,8 +455,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwpa_client \
-    TetheringConfigOverlay \
-    WifiOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf \
