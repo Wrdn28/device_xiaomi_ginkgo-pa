@@ -105,6 +105,11 @@ ODM_MANIFEST_SKUS += willow
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 
+#props
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 cgroup.memory=nokmem,nosocket
@@ -144,11 +149,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
