@@ -310,10 +310,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
-
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
