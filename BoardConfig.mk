@@ -101,7 +101,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 #props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
