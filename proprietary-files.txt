@@ -1654,29 +1654,9 @@ vendor/firmware/novatek_ts_tianma_mp.bin
 
 # Graphics - SDM - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/lib/libdisp-aba.so|539ac8ff89fd51fa0ce8a11d9c476843291392bc
-vendor/lib/libdisplayqos.so|1c01c72ca8e3ce28d3b0fb716e4d7ed21af44875
 vendor/lib/libdpps.so|6d658391d39d0abde0019ce8870d4c0f5c1e9386
-vendor/lib/libhdr_tm.so|9bd39324ca84ed0acd479dc8f591e7682024c76a
-vendor/lib/libqseed3.so|97d17f5694a845dcdf7e09cb99aa4a01ffc26ecd
-vendor/lib/libsdedrm.so|c52326b333df269927e02a3aeaa6c29b0b7cab33
-vendor/lib/libsdm-color.so|7a2fff2590efdc55fdf84c6005b1108aa901787f
-vendor/lib/libsdm-colormgr-algo.so|8f57dd5e9558c35930f2ade79fd3268ed8e2f5e9
-vendor/lib/libsdm-diag.so|5696da3008fa6497dd1ce6c8b9333ed4a9157f3a
-vendor/lib/libsdm-disp-vndapis.so|c4a130cb36c3928fe04ffcf4aaac28105baf6b20
-vendor/lib/libsdmextension.so|8fffe29414942e7364f0873abfd6e6f6565541ac
-vendor/lib/libtinyxml2_1.so|597d471aad4cd5c0cf73bab8bc04bac5ed95ee92
 vendor/lib64/libdisp-aba.so|44993853ff9d4340e856e6f53d802f10372442d3
-vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
 vendor/lib64/libdpps.so|1b834491e545c7d068734047c9fb704e9eab0213
-vendor/lib64/libhdr_tm.so|b4d129efafedbc82e122ef7edff26ca65204b630
-vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
-vendor/lib64/libsdedrm.so|382eb3983fee819c1ec345f858ba62a4ce0ef7d3
-vendor/lib64/libsdm-color.so|795d32583dcd6e28ce8793b919e0bbad7332c656
-vendor/lib64/libsdm-colormgr-algo.so|073245d67ec606f7b73c34e2b4956ebcc81b350c
-vendor/lib64/libsdm-diag.so|c21a643ab4ec151e0374df8ce5b839f71d07df90
-vendor/lib64/libsdm-disp-vndapis.so|4fbf76da3a9eb5d227f948521bd4c80842446bb4
-vendor/lib64/libsdmextension.so|3ee78da2415ce630e7d8f0c96fea34c53341b7db
-vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # IPA firmware
 vendor/firmware/ipa_fws.b00
@@ -1819,13 +1799,6 @@ vendor/bin/pm-service|4a50fd16c62ba27643eabb89d79c022d667bd8b2
 vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
 # Postprocessing - from LA.UM.9.11.r1-04500-NICOBAR.0
-product/etc/permissions/com.qti.snapdragon.sdk.display.xml|4c71d110023088c6ea8072227c714416e2792d75
--product/framework/com.qti.snapdragon.sdk.display.jar|176d711c7d2aa5c95c8ecb42fec8a29158247ea3
--system_ext/app/colorservice/colorservice.apk|cbee68aee112b3ac93bddf278e4b0698df2b14f1
-system_ext/lib/libsd_sdk_display.qti.so|334f2b931a5d620fc4767c5dae5fb6915fc6c8c4
-system_ext/lib/libsdm-disp-apis.qti.so|8f9921f9959b05e02c0debdaa5d325ec8b86553f
-system_ext/lib64/libsd_sdk_display.qti.so|2217fdd071d00826f865f4d18082f3a5119cd998
-system_ext/lib64/libsdm-disp-apis.qti.so|dffed675eb5c8addd1773039a5fa2e24f2bb1c75
 vendor/bin/hw/vendor.display.color@1.0-service|91e9e25ec4d64c4a7d5261899ca2cdb9cf29b695
 vendor/bin/ppd|0a4a306f97af5d1b623390da22705bcb93f68f4b
 vendor/bin/qdcmss|a1bb68e4508feac29c821eb791cae8b1db235e28

@@ -128,26 +128,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.trinket \
-    hwcomposer.trinket \
-    libdisplayconfig.qti \
-    libtinyxml \
-    libtinyxml2 \
-    libvulkan \
-    memtrack.trinket \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.mapper@2.0.vendor
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -316,6 +296,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     alarm \
     av \
     bt \
+    display \
     usb \
     vibrator \
     wfd
