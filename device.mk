@@ -346,15 +346,15 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Soong namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+
 # Servicetracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.0.vendor \
     vendor.qti.hardware.servicetracker@1.1.vendor \
     vendor.qti.hardware.servicetracker@1.2.vendor
-
-# Soong namespace
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
