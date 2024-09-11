@@ -96,11 +96,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_SEPARATED_DTBO := true
 
+KERNEL_SD_LLVM_SUPPORT := true
 TARGET_KERNEL_SOURCE := kernel/msm-4.14
 TARGET_KERNEL_CONFIG := vendor/ginkgo-perf_defconfig
-
-TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
