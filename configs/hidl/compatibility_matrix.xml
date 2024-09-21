@@ -26,14 +26,6 @@ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <compatibility-matrix version="1.0" type="device">
-    <hal format="hidl" optional="false">
-        <name>android.frameworks.sensorservice</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISensorManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.secure_element</name>
         <fqname>ISecureElement/SIM1</fqname>
