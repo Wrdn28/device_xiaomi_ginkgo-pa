@@ -1,3 +1,4 @@
+type sysfs_hal_health_default, fs_type, sysfs_type;
 type fingerprint_data_file, data_file_type, file_type;
 type goodix_fingerprint_data_file, data_file_type, file_type, core_data_file_type;
 type thermal_data_file, data_file_type, file_type;
