@@ -27,12 +27,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# LMK
-ro.config.low_ram=false
-ro.lmk.kill_timeout_ms=50
-ro.lmk.filecache_min_kb=153600
-ro.config.per_app_memcg=false
-
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
@@ -50,9 +44,6 @@ ro.media.recorder-max-base-layer-fps=60
 
 # Netflix
 ro.netflix.bsp_rev=Q6125-17995-1
-
-# Phantom process monitoring
-sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # QTI Mem Optimization
 persist.vendor.sys.memplus.enable=false

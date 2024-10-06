@@ -81,9 +81,10 @@ ODM_MANIFEST_SKUS += willow
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 
-#props
+# props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
