@@ -28,12 +28,10 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
 # LMK
-ro.lmk.filecache_min_kb=153600
+ro.config.low_ram=false
 ro.lmk.kill_timeout_ms=50
-ro.lmk.stall_limit_critical=40
-
-# FUSE
-persist.sys.fuse.passthrough.enable=true
+ro.lmk.filecache_min_kb=153600
+ro.config.per_app_memcg=false
 
 # Media
 debug.stagefright.ccodec=1
