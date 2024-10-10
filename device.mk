@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
 # Display/Graphics
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+TARGET_USE_AIDL_QTI_MEMTRACK := true
 
 # Dynamic Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
