@@ -59,6 +59,9 @@ TARGET_NEEDS_RAW10_BUFFER_FIX := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_USES_MIUI_CAMERA := true
 
+# MiuiCamera
+-include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_ION := true
@@ -88,6 +91,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_ginkgo
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -106,6 +110,7 @@ BOARD_KERNEL_CMDLINE := \
       kpti=off \
       androidboot.boot_devices=soc/4744000.sdhci \
       androidboot.android_dt_dir=/non-existent
+
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -203,6 +208,9 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 BOARD_SEPOLICY_M4DEFS += \
      sysfs_battery_supply=vendor_sysfs_battery_supply \
      sysfs_usb_supply=vendor_sysfs_usb_supply
+
+# Inherit from ReloadedOS configuration
+include vendor/reloaded/config/BoardConfigReloaded.mk
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk
