@@ -163,6 +163,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 TARGET_USES_INTERACTION_BOOST := true
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/bt_firmware:/bt_firmware
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 
