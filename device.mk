@@ -302,6 +302,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     usb \
+    dsprpcd \
     vibrator \
     wfd \
     telephony \
