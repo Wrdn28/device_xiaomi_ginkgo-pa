@@ -140,8 +140,6 @@ vendor/lib/libcamera_scene.so
 vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libdng_sdkvendor.so
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libfastcvopt.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libft2vendor.so
 vendor/lib/libhal_dbg.so
@@ -168,8 +166,6 @@ vendor/lib/libvidhance.so
 vendor/lib/libxiaomiAI_sensor.so
 vendor/lib/mibokeh_660_opencl.bin
 vendor/lib/miwatermark.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
 vendor/lib64/libseemore.so
 vendor/lib64/libswvdec.so
 
@@ -1630,9 +1626,6 @@ vendor/lib/libOmxVideoDSMode.so|979e5cb96260c8fa60eb55825a2a22273f524c65
 vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
 vendor/lib/libmm-color-convertor.so|22d7b8f77d0f19826743206d79bdf9a6a8c9e18f
 vendor/lib/libmmosal.so|a2203f5be5dc1ee10d2f5da8f167a46acb0a660e
-vendor/lib/vendor.qti.hardware.vpp@1.1.so|d3390ff80287d5b5455391315710e09a9fa916e3
-vendor/lib/vendor.qti.hardware.vpp@1.2.so|add78a07a84d8c156aac20e85374d5e4ed278e32
-vendor/lib/vendor.qti.hardware.vpp@1.3.so|ff0ccc8c858f12d052a9dde1170f2700a8480ae9
 vendor/lib64/libAlacSwDec.so|9fbfad65ffca33e1ac480e9cb056467ac75a6d5a
 vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
 vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
@@ -1647,8 +1640,6 @@ vendor/lib64/libOmxApeDecSw.so|6ec15cb9a251a35e7f7d427dcf0b0e945825518f
 vendor/lib64/libOmxEvrcDec.so|5e3562bdc1195c22a4a029931b745a6af7362ef2
 vendor/lib64/libOmxG711Dec.so|5547aa41c05f1eab9f45bc9bd08c40d12a94c6e0
 vendor/lib64/libOmxQcelp13Dec.so|2c9039f7a6a11056a15d7d71f1cf551b5835ec93
-vendor/lib64/libOmxSwVdec.so|959de8d76e50a2f620252efd4ad2868168d29d57
-vendor/lib64/libOmxSwVencMpeg4.so|077d08084b9259d01bc733fc31ce1f81a39970ba
 vendor/lib64/libOmxWmaDec.so|55df18e39db5ef9d52e0c958eb261d885d94e194
 vendor/lib64/libmm-color-convertor.so|f169b7f24612b9a0c93b9d2eeb29cec04b0e4ec8
 vendor/lib64/libmmosal.so|37b9e35f22eba91307acaa120adb23700838a810
@@ -1913,30 +1904,15 @@ vendor/lib64/sensors.ssc.so
 
 # Sensors - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
-vendor/bin/sensors.qti|df4b919caa0f56af68a7a28acea339de113d2d71
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
-vendor/lib/libsensorslog.so|c83784e147b5173534f2d6dfa19a30b2955ba2bf
 vendor/lib/libsnsapi.so|4a6d070a949d9ae405944b58b599a5dd2a77980e
-vendor/lib/libsnsdiaglog.so|c504b2d40bf6e27e16c59f33227d396c20b03fcb
-vendor/lib/libsns_device_mode_stub.so|a617b83cef3302d3cf3930fee2cba635993d44ad
-vendor/lib/libsns_fastRPC_util.so|a97c4a3781f6fa6c23c05f29c09f6ddb9b2dbdca
-vendor/lib/libsns_low_lat_stream_stub.so|1637c02478133bd95c612004a23a771633a16512
 vendor/lib/libsns_registry_skel.so|87268b4da06b08b5fb50cd6b9df8aabbea1a476d
-vendor/lib/libssc.so|2a621707d7864a072413f91376832b0b0e9af30d
-vendor/lib/libssc_default_listener.so|e3a7b4fe1b4e31afb6fffcf8fd2babf60db1e894
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
-vendor/lib64/libsensorslog.so|3badc948790794466183f9ca44975ffebcff317c
 vendor/lib64/libsnsapi.so|403d2ebcc3d1c8f34b81ca6f8bfc09e6b315ff71
-vendor/lib64/libsnsdiaglog.so|f1577ae9b0dd2b1b936ba6f4a05df5138afb8eb3
-vendor/lib64/libsns_device_mode_stub.so|38226af3cf63cb8f9f7313eea94ad89d75fd7b81
-vendor/lib64/libsns_fastRPC_util.so|90f17e054b34eb25f4238701cec1d583f6ec1f2a
-vendor/lib64/libsns_low_lat_stream_stub.so|039ea5924fea0dbe0221d872c2d0658db3855ebb
 vendor/lib64/libsns_registry_skel.so|451329a16708d84d02b34dc6828162158817cf03
-vendor/lib64/libssc.so|c16132c4bd57432ac7c75f3b4b8c0a646004ce58
-vendor/lib64/libssc_default_listener.so|d1ca27c768a8746fc92ff5d0ed61699015853d7c
 
 # Sensors configs
 vendor/etc/sensors/config/bmm150_0.json
