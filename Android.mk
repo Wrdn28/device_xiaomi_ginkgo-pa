@@ -139,4 +139,10 @@ $(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(CNE_SYMLINKS)
 
+# Kernel headers
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard kernel/msm-4.14/kernel-headers/*)
+	rm -rf $@
+	mkdir -p $@/include
+	cp -a kernel/msm-4.14/kernel-headers/. $@/include
+
 endif

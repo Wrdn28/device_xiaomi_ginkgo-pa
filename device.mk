@@ -229,6 +229,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# Kernel (Prebuilt)
+TARGET_PREBUILT_KERNEL := kernel/msm-4.14/Image.gz-dtb
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
+PRODUCT_VENDOR_KERNEL_HEADERS := kernel/msm-4.14/kernel-headers
+
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
