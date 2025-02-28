@@ -316,6 +316,9 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan \
     perf
 
+# Reserved
+$(call inherit-product, device/xiaomi/ginkgo/configs/ReservedSize.mk)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
