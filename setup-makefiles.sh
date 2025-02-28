@@ -38,6 +38,7 @@ function vendor_imports() {
        "vendor/qcom/common/vendor/adreno-r",
        "vendor/qcom/common/vendor/display/4.14",
        "vendor/qcom/common/vendor/media-legacy",
+       "vendor/qcom/common/vendor/gps-legacy",
        "vendor/qcom/opensource/dataservices",
        "vendor/qcom/opensource/data-ipa-cfg-mgr",
 EOF
@@ -53,23 +54,26 @@ function lib_to_package_fixup_vendor_variants() {
             com.qualcomm.qti.imscmservice@2.0 | \
             com.qualcomm.qti.imscmservice@2.1 | \
             com.qualcomm.qti.imscmservice@2.2 | \
+            libmmosal | \
             com.qualcomm.qti.uceservice@2.0 | \
             com.qualcomm.qti.uceservice@2.1 | \
+            com.qualcomm.qti.uceservice@2.2 | \
+            com.qualcomm.qti.uceservice@2.3 | \
             libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1 | \
             vendor.qti.ims.callinfo@1.0 | \
             vendor.qti.ims.rcsconfig@1.0 | \
             vendor.qti.ims.rcsconfig@1.1 | \
-            vendor.qti.hardware.data.cne.internal.api@1.0 | \
-            vendor.qti.hardware.data.cne.internal.constants@1.0 | \
-            vendor.qti.hardware.data.cne.internal.server@1.0 | \
-            vendor.qti.hardware.data.connection@1.0 | \
-            vendor.qti.hardware.data.connection@1.1 | \
-            vendor.qti.hardware.data.dynamicdds@1.0 | \
-            vendor.qti.hardware.data.iwlan@1.0 | \
-            vendor.qti.hardware.data.qmi@1.0 | \
+            vendor.qti.hardware.data.* | \
+            vendor.qti.data.* | \
+            vendor.qti.latency* | \
+            vendor.qti.hardware.radio.* | \
+            vendor.qti.ims.* | \
+            vendor.qti.hardware.mwqemadapter@1.0 | \
+            vendor.qti.imsrtpservice@3.0 | \
             vendor.qti.hardware.fm@1.0 | \
             vendor.qti.hardware.qccsyshal@1.0 | \
             vendor.qti.hardware.qccvndhal@1.0 | \
+            vendor.dolby.hardware.dms@2.0 | \
             vendor.qti.hardware.wifidisplaysession@1.0)
             echo "${1}_vendor"
             ;;
