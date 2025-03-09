@@ -290,10 +290,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Platform
 TARGET_BOARD_PLATFORM := trinket
 TRINKET := trinket
@@ -336,6 +332,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     librmnetctl
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Sensors
 PRODUCT_PACKAGES += \
