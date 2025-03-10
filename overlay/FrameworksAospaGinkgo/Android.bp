@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "FrameworksAospaGinkgo",
+    theme: "FrameworksAospaGinkgo",
+    sdk_version: "current",
+    vendor: true,
+}

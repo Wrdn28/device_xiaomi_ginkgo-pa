@@ -13,19 +13,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayGinkgo \
-    FrameworksOverlayGinkgo \
-    FrameworksOverlayWillow \
-    NoCutoutOverlayGinkgo \
-    NotchBarKillerOverlayGinkgo\
-    SettingsLibOverlayGinkgo \
-    SettingsOverlayGinkgo \
-    SettingsProviderOverlayGinkgo \
-    SystemUIOverlayGinkgo \
-    TelephonyOverlayGinkgo \
-    TetheringOverlayGinkgo \
-    WifiOverlayGinkgo \
-    GinkgoMiuiCamera
+    CarrierConfigAospaGinkgo \
+    FrameworksAospaGinkgo \
+    FrameworksAospaWillow \
+    SettingsAospaGinkgo \
+    SettingsLibAospaGinkgo \
+    SystemUIAospaGinkgo \
+    MiuiCameraGinkgo \
+    NoCutoutGinkgo \
+    NotchBarKillerGinkgo
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -312,6 +308,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     display \
+    overlay \
     usb \
     vibrator \
     wfd \
