@@ -19,6 +19,9 @@ cc_library_shared {
     header_libs: ["libhardware_headers"],
     shared_libs: ["liblog"],
     cflags: ["-DLOG_TAG=\"qdlights\""],
+    overrides: ["lights.qcom", 
+                "android.hardware.lights-service.qti", 
+                "vendor.qti.hardware.lights.service"],
     clang: true,
     vendor: true,
 }
