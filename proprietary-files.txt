@@ -1308,20 +1308,6 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
-# Camera provider
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-
 # Camera sensors
 vendor/lib/libmmcamera_ginkgo_gc02m1_ofilm_ii.so
 vendor/lib/libmmcamera_ginkgo_gc02m1_ofilm_iii.so
@@ -1597,7 +1583,6 @@ vendor/lib64/vendor.qti.gnss@4.1.so|006ae9f001bf3c64cfd974787bf2ac4b170816cd
 vendor/lib64/vendor.qti.gnss@4.2.so|7202f4a05bc0eea9d704c915582671582fe144e8
 vendor/lib64/vendor.qti.gnss@4.3-service.so|2cd7c121074d82050eb67b0ed40272632c3a3d90
 vendor/lib64/vendor.qti.gnss@4.3.so|7ce1927bce2078ebe730186a5e7e095442b7c7b3
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|8f1bd782c728fc275b8e78785a4866414d8c1cd8
 
 # GPU firmware
 vendor/firmware/a610_zap.b00
@@ -1716,10 +1701,6 @@ vendor/lib64/unnhal-acc-hvx.so|00eb79608cb6e3f19eaf9389632fdbfa03b2df62
 
 # NFC - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/lib/libsn100u_fw.so;ve|2bc1887b71b4557b75e26465f6917525bfd43e4a
-
-# Perf
-vendor/lib/libqti-perfd-client.so
-vendor/lib64/libqti-perfd-client.so
 
 # Peripheral - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/pm-proxy|0704192692efb4b79e8cb1a2252625ad24468805
@@ -1861,7 +1842,7 @@ vendor/lib64/libril-qc-hal-qmi.so|4800e88a2481f273c394a1853692d0ac61c9e729
 vendor/lib64/libril-qc-logger.so|e3dfa5980d43c61340ef658d9e993eeff68a17f3
 vendor/lib64/libril-qc-ltedirectdisc.so|73c895b61d063280e499de5458a9ccfb77949a39
 vendor/lib64/libril-qc-radioconfig.so|d85b0ea09c56e340089eb1915bd134bfd3623f29
-vendor/lib64/libril-qcril-hook-oem.so|794b1c759dd6b141fa4f8492057a3d22908e0de4
+vendor/lib64/libril-qcril-hook-oem.so;DISABLE_DEPS|794b1c759dd6b141fa4f8492057a3d22908e0de4
 vendor/lib64/librilqmiservices.so|7f964508fe88526700a565034e40d2e7a195299b
 vendor/lib64/libsettings.so|9315bc460fe145b07b350ac9fa9bb0e722eb325e
 vendor/lib64/libsystem_health_mon.so|347aea4e5a655b87ebe8dcf72cd6414aced3a74e
